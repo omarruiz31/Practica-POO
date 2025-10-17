@@ -12,12 +12,8 @@ public class Laptop extends Computer implements PortableDevice {
         super(model, manufacturing, operatingSistem);
     }
 
-    public String getModel(){
-        return "2022";
-    }
-
     public int getBatteryCapacitty(){
-        return 88;
+        return batteryCappacity;
     }
 
     public String getComputerType(){

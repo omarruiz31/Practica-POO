@@ -10,7 +10,9 @@ public abstract class Computer {
     }
 
     //Getters
-
+    public String getModel(){
+        return model;
+    }
     public abstract String getComputerType();
 
     public abstract int calculatePortabilityScore();
