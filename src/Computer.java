@@ -9,13 +9,36 @@ public abstract class Computer {
         this.operatingSistem = operatingSistem;
     }
 
-    //Getters
-    public String getModel(){
-        return model;
-    }
+
     public abstract String getComputerType();
 
     public abstract int calculatePortabilityScore();
+
+    public String getModel(){
+        return model;
+    }
+    public void setModel(String model){
+        this.model = model;
+    }
+
+    public String getManufacturing(){
+        return manufacturing;
+    }
+    public void setManufacturing(String manufacturing){
+        this.manufacturing = manufacturing;
+    }
+
+    public String getOperatingSistem(){
+        return operatingSistem;
+    }
+    public void setOperatingSistem(String operatingSistem){
+        this.operatingSistem = operatingSistem;
+    }
+
+    @Override
+    public String toString(){
+        return  model + " " + manufacturing + " " + operatingSistem + " " + getComputerType();
+    }
 
 
 }

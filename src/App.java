@@ -13,8 +13,7 @@ public class App {
         Notebook n3 = new Notebook("2021", "thinkcentre", "chrome os");
 
 
-        System.out.println(l1.calculatePortabilityScore());
-        System.out.println(n1.getModel());
+        System.out.println(l1);
 
     
 
