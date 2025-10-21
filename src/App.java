@@ -1,3 +1,5 @@
+import java.util.ArrayList;
+
 public class App {
     public static void main(String[] args) throws Exception {
         Laptop l1 = new Laptop("2022", "HP", "Windows 11",100,1000);
@@ -13,9 +15,21 @@ public class App {
         Notebook n3 = new Notebook("2021", "thinkcentre", "chrome os");
 
 
-        System.out.println(l1);
+        ArrayList<Object> computadoras = new ArrayList<>();
 
-    
+        computadoras.add(l1);
+        computadoras.add(l2);
+        computadoras.add(l3);
+        computadoras.add(d1);
+        computadoras.add(d2);
+        computadoras.add(d3);
+        computadoras.add(n1);
+        computadoras.add(n2);
+        computadoras.add(n3);
+
+        for (Object compu : computadoras) {
+            System.out.println(compu);
+        }
 
     }
 }
